@@ -2,9 +2,6 @@
 
 A small CLI tool to organize files into categorized folders based on file extensions.
 
-- Language: C# (learning project)
-- Target: .NET 10
-
 What it does
 
 - Scans a directory (and subfolders) for files.
@@ -45,4 +42,5 @@ Notes
 
 ## Thank you <3
 This is my first C# project and I split the projec across small files to keep things simple and easy to work on later.
+
 
