@@ -45,9 +45,10 @@ Notes
 
 Project layout
 
-- `sorta.cli/Program.cs` — CLI entry point, reads/creates config and runs the organiser.
-- `sorta.core/Organiser.cs` — Main organizer logic (creates dirs, moves files).
-- `sorta.core/Config.cs` — Config model used for JSON serialization.
-- `sorta.core/DirUtil.cs` — Small utilities for enumerating files and computing directory info.
+- `sorta.cli/Program.cs` â€” CLI entry point, reads/creates config and runs the organiser.
+- `sorta.core/Organiser.cs` â€” Main organizer logic (creates dirs, moves files).
+- `sorta.core/Config.cs` â€” Config model used for JSON serialization.
+- `sorta.core/DirUtil.cs` â€” Small utilities for enumerating files and computing directory info.
 
-This is my first C# project and I split responsibilities across small files to keep things simple and easy to collaborate on. Thank you <3
+
+This is my first C# project and I split the projec across small files to keep things simple and easy to collaborate on. Thank you <3
