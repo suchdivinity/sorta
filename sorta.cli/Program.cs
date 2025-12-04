@@ -1,6 +1,6 @@
-﻿using System.Text.Json;
 using sorta.core.Configuration;
 using sorta.core.Organiser;
+using System.Text.Json;
 
 namespace sorta.cli.Program
 {
@@ -15,12 +15,62 @@ namespace sorta.cli.Program
 			{
 				var categories = new Dictionary<string, string[]>
 				{
-					{ "Compressed", new[] { ".zip", ".rar", ".7z", ".tar", ".gz" } },
-					{ "Executables", new[] { ".exe", ".msi", ".bat", ".cmd" } },
-					{ "Pictures", new[] { ".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tiff" } },
-					{ "Videos", new[] { ".mp4", ".avi", ".mkv", ".mov", ".wmv" } },
-					{ "Documents", new[] { ".pdf", ".docx", ".txt", ".xlsx", ".pptx" } },
-					{ "Music", new[] { ".mp3", ".wav", ".flac", ".aac" } }
+					{
+						"Compressed",
+						new []
+                        {
+                            ".zip", ".rar", ".7z", ".tar", ".gz",
+							".bz2", ".cab", ".dmg", ".iso",
+							".lzma", ".xz", ".zst"
+						}
+					},
+					{
+						"Executables",
+						new []
+						{
+							".exe", ".msi", ".bat", ".cmd",
+							".apk", ".appimage", ".jar",
+							".ps1", ".py", ".sh", ".vbs"
+						}
+					},
+					{
+						"Pictures",
+						new []
+						{
+							".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tiff",
+							".arw", ".cr2", ".heic", ".heif",
+							".ico", ".nef", ".raw", ".svg", ".webp"
+						}
+					},
+					{
+						"Videos",
+						new []
+						{
+							".mp4", ".avi", ".mkv", ".mov", ".wmv",
+							".3gp", ".flv", ".m4v",
+							".mpeg", ".mpg", ".webm"
+						}
+					},
+					{
+						"Documents",
+						new []
+						{
+							".pdf", ".docx", ".txt", ".xlsx", ".pptx",
+							".csv", ".html", ".htm",
+							".json", ".md", ".odt",
+							".odp", ".ods", ".rtf",
+							".xml", ".yaml", ".yml"
+						}
+					},
+					{
+						"Music",
+						new []
+						{
+							".mp3", ".wav", ".flac", ".aac",
+							".aiff", ".alac", ".m4a",
+							".ogg", ".wma"
+                        }
+					}
 				};
 
 				cfg = new Config(categories);
