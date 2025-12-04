@@ -43,12 +43,6 @@ Notes
 
 - To add or change categories, edit `config.json` and rerun the tool.
 
-Project layout
+## Thank you <3
+This is my first C# project and I split the projec across small files to keep things simple and easy to work on later.
 
-- `sorta.cli/Program.cs` — CLI entry point, reads/creates config and runs the organiser.
-- `sorta.core/Organiser.cs` — Main organizer logic (creates dirs, moves files).
-- `sorta.core/Config.cs` — Config model used for JSON serialization.
-- `sorta.core/DirUtil.cs` — Small utilities for enumerating files and computing directory info.
-
-
-This is my first C# project and I split the projec across small files to keep things simple and easy to collaborate on. Thank you <3
